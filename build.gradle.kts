@@ -3,12 +3,12 @@ buildscript {
     dependencies { classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61") }
 }
 
-dependencies {
-    implementation(kotlin("stdlib-js"))
-}
-
 plugins {
     id("org.jetbrains.kotlin.js").version("1.3.61")
+}
+
+apply {
+    from("gradle/dependencies.gradle.kts")
 }
 
 repositories {
